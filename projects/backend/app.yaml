@@ -44,6 +44,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: test-practice
+            name: cicd-practice
             port:
               number: 3000
