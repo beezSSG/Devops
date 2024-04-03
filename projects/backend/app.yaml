@@ -37,7 +37,7 @@ metadata:
 spec:
   ingressClassName: "nginx"
   rules:
-  - host: handbook.pickme-ssg.com
+  - host: backend.pickme-ssg.com
     http:
       paths:
       - path: /
