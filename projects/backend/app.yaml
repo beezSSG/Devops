@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test-practice
+  name: cicd-practice
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: test-practice
+      app: cicd-practice
   template:
     metadata:
       labels:
-        app: test-practice
+        app: cicd-practice
     spec:
       containers:
-      - name: test-practice
+      - name: cicd-practice
         image: geunsam2/handbook-expert:latest
         ports:
         - containerPort: 3000
@@ -21,10 +21,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: test-practice
+  name: cicd-practice
 spec:
   selector:
-    app: test-practice
+    app: cicd-practice
   ports:
   - protocol: TCP
     port: 3000
@@ -33,7 +33,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: test-practice
+  name: cicd-practice
 spec:
   ingressClassName: "nginx"
   rules:
