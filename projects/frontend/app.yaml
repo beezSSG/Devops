@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cicd-practice
-        image: beezSSG/finalproject_pickme_front:latest
+        image: 709745608741.dkr.ecr.ap-northeast-2.amazonaws.com/pickme_front:latest
         ports:
         - containerPort: 3000
 ---
