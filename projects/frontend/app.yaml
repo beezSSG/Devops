@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cicd-practice
-        image: geunsam2/handbook-expert:latest
+        image: beezSSG/finalproject_pickme_front:latest
         ports:
         - containerPort: 3000
 ---
