@@ -1,3 +1,3 @@
 "replicaCount": "1"
-"image": "${ECR_REGISTRY}/${ECR_REPOSITORY}:00f43f69e3a5921e70cdd2238df832b3c393b26c"
-"host": "front.pickme-ssg.com"
+"image": "${ECR_REGISTRY}/${ECR_REPOSITORY}:4d668143fac1936d49a9f1f143f145c0b426f9b0"
+"host": "mypickme.pickme-ssg.com"
