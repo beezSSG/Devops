@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cicd-practice
-        image: geunsam2/handbook-expert:latest
+        image: public.ecr.aws/e3s0f1s6/pickme_front:dd36cdff6d8d18d1e33e6d9075f29f8cf6bb06c0
         ports:
         - containerPort: 3000
 ---
@@ -37,7 +37,7 @@ metadata:
 spec:
   ingressClassName: "nginx"
   rules:
-  - host: backend.pickme-ssg.com
+  - host: front.pickme-ssg.com
     http:
       paths:
       - path: /
