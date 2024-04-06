@@ -16,7 +16,8 @@ spec:
       - name: my-container
         image: {{ required "image 까묵지 말라고 했지!" .Values.image }}
         ports:
-        - containerPort: 3000
+        #- containerPort: 3000
+        - containerPort: 80
         #livenessProbe:
           #httpGet:
           #  path: /
