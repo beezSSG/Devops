@@ -16,7 +16,7 @@ spec:
       - name: cicd-practice
         image: public.ecr.aws/e3s0f1s6/pickme_back:85056a8e44cb0fb84a44e44fb398ce5281fc10a2
         ports:
-        - containerPort: 8080
+        - containerPort: 8086
 ---
 apiVersion: v1
 kind: Service
@@ -27,8 +27,8 @@ spec:
     app: cicd-practice
   ports:
   - protocol: TCP
-    port: 8081
-    targetPort: 8080
+    port: 8086
+    targetPort: 8086
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
@@ -46,4 +46,4 @@ spec:
           service:
             name: cicd-practice
             port:
-              number: 8081
+              number: 8086
