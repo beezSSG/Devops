@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cicd-practice
-        image: public.ecr.aws/e3s0f1s6/pickme_back:85056a8e44cb0fb84a44e44fb398ce5281fc10a2
+        image: public.ecr.aws/e3s0f1s6/pickme_back:966b03a8e177bb4c0dbe02cceafa97277c2034da
         ports:
         - containerPort: 8086
 ---
