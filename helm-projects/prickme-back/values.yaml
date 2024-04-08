@@ -1,3 +1,3 @@
 replicaCount: "1"
-image: "709745608741.dkr.ecr.ap-northeast-2.amazonaws.com/pickme_back:ef0cbebd15f6441e1a1badeef2d970649d097c18"
+image: "709745608741.dkr.ecr.ap-northeast-2.amazonaws.com/pickme_back:667781ac648b217f1f391e0ef2acf701843f4f4a"
 host: "back.pickme-ssg.com"
