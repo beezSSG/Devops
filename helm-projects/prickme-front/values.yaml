@@ -1,3 +1,3 @@
 replicaCount: "1"
-image: "public.ecr.aws/e3s0f1s6/pickme_front:9fd44265acf2257e2a09ecfefe7eb5135b2d7e23"
+image: "public.ecr.aws/e3s0f1s6/pickme_front:814bd8e39073673d6ae9d3ff970a37c97504bc3e"
 host: "mypickme.pickme-ssg.com"
