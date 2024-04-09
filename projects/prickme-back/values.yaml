@@ -1,0 +1,3 @@
+replicaCount: "1"
+image: "709745608741.dkr.ecr.ap-northeast-2.amazonaws.com/pickme_back:d70fdc957b806e0a75f2da001d3dfde0d9fec90e"
+host: "backend.pickme-ssg.com"
