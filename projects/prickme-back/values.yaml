@@ -1,3 +1,49 @@
-replicaCount: "1"
-image: "709745608741.dkr.ecr.ap-northeast-2.amazonaws.com/pickme_back:a24b8a056d19b83e841625a7e69dae64b1ecf5b7"
-host: "backend.pickme-ssg.com"
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cicd-practice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cicd-practice
+  template:
+    metadata:
+      labels:
+        app: cicd-practice
+    spec:
+      containers:
+      - name: cicd-practice
+        image: 709745608741.dkr.ecr.ap-northeast-2.amazonaws.com/pickme_back:13686c47061557d00e301c4edf2f09b4fa18c961
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cicd-practice
+spec:
+  selector:
+    app: cicd-practice
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cicd-practice
+spec:
+  ingressClassName: "nginx"
+  rules:
+  - host: backend.pickme-ssg.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: cicd-practice
+            port:
+              number: 80
