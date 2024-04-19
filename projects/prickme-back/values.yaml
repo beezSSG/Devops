@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: cicd-practice
-        image: "709745608741.dkr.ecr.ap-northeast-2.amazonaws.com/pickme_back:0dd66825155dc495fa4326f53f35969073cbc84d"
+        image: "709745608741.dkr.ecr.ap-northeast-2.amazonaws.com/pickme_back:815bde96100a56cbaab3ae4ff9647244ee85f305"
         ports:
         - containerPort: 8080
 ---
